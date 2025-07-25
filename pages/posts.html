@@ -9,9 +9,22 @@
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="top-bar">
+    <input type="text" id="searchInput" placeholder="Buscar posts...">
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <div id="postsContainer" class="posts"></div>
+
+  <div id="postModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalBody"></p>
+    </div>
+  </div>
+
+<footer>By Bia Vizeu</footer>
 </body>
 <script src="../scripts/posts.js"></script>
 

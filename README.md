@@ -5,13 +5,6 @@
 
 O objetivo deste desafio é avaliar suas habilidades em desenvolvimento de páginas web front-end. Você deverá criar uma UI simples que consome uma API pública, exibe os dados em uma lista, permite a navegação para uma tela de detalhes e possui uma funcionalidade de busca.
 
-## Requisitos
-
-- **Plataforma:** Web (Front-end).
-- **Linguagem:** O código principal do aplicativo deve ser escrito em HTML, CSS e JavaScript (ou TypeScript).
-- **Framework:** Sem frameworks pesados, mas você pode usar bibliotecas leves como React ou Vue.js ou Bootstrap.
-- **API:** Utilize a API pública [JSONPlaceholder](https://jsonplaceholder.typicode.com/) para obter os dados e a API [DummyJSON](https://dummyjson.com/docs/auth) para autenticação de usuários.
-
 ## Funcionalidades
 
 ### 1. Tela de Login
@@ -43,35 +36,4 @@ O objetivo deste desafio é avaliar suas habilidades em desenvolvimento de pági
 - A interface deve ser responsiva e funcionar bem em dispositivos móveis e desktops.
 - Utilize boas práticas de design responsivo, como media queries e flexbox ou grid layout.
 
-## Estrutura do Projeto
-
-- Organize o código-fonte em uma estrutura clara e coesa. Sugerimos a seguinte estrutura:
-
-```
-/index.html
-/pages/
-  /login.html
-  /posts.html
-/styles
-  /main.css
-/scripts
-  /login.js
-  /posts.js
-```
-- Os arquivos já estão criados, mas você pode reorganizar conforme necessário.
-- A folha de estilos main.css já está vinculada as páginas HTML, mas você pode criar outras folhas de estilos se necessário.
-  - Não é necessário utilizar as fontes, paleta de cores em main.css pode utilizar sua criatividade para criar uma UI agradável.
-
-## Avaliação
-
-Serão avaliados os seguintes pontos:
-
-- **Qualidade do código:** Clareza, organização, manutenibilidade e boas práticas de programação.
-- **Estilo e UI e UX:** A interface do usuário deve ser limpa, intuitiva e responsiva.
-- **Funcionalidade:** O aplicativo deve atender a todos os requisitos funcionais descritos.
-
-## Como Entregar
-
-1. Crie um fork deste repositório.
-2. Implemente a solução.
-3. Faça commits frequentes e claros.
+# Bia Vizeu
