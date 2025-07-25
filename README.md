@@ -36,4 +36,4 @@ O objetivo deste desafio é avaliar suas habilidades em desenvolvimento de pági
 - A interface deve ser responsiva e funcionar bem em dispositivos móveis e desktops.
 - Utilize boas práticas de design responsivo, como media queries e flexbox ou grid layout.
 
-# Bia Vizeu
+## Bia Vizeu
