@@ -1,6 +1,14 @@
 
 # Desafio Front-end - Nível Jr
 
+## Prints
+
+![Tela de login](img/1.png)
+![Tela de início](img/2.png)
+![Tela de pesquisa](img/3.png)
+![Tela de detalhes](img/4.png)
+
+
 ## Objetivo
 
 O objetivo deste desafio é avaliar suas habilidades em desenvolvimento de páginas web front-end. Você deverá criar uma UI simples que consome uma API pública, exibe os dados em uma lista, permite a navegação para uma tela de detalhes e possui uma funcionalidade de busca.
