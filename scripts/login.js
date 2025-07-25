@@ -16,7 +16,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     const data = await res.json();
 
     if (!res.ok) {
-      document.getElementById("error").textContent = "Credenciais inválidas.";
+      document.getElementById("error").textContent = "Usuário ou senha invalidos.";
       return;
     }
 
