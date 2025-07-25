@@ -1,24 +1,28 @@
-document.getElementById("loginForm").addEventListener("submit", (e) => {
+document.getElementById("loginForm").addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  const username = document.getElementById("username").value.trim();
+  const password = document.getElementById("password").value.trim();
+
   try {
-    const username = document.getElementById("username").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const errorElem = document.getElementById("loginError");
+    const res = await fetch("https://dummyjson.com/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ username, password })
+    });
 
-    if (username === "Bia Vizeu" && password === "1234") {
-      const fakeToken = "token-bia-vizeu-1234";
-      const user = { username: "biavizeu", nome: "Bia Vizeu" };
+    const data = await res.json();
 
-      localStorage.setItem("token", fakeToken);
-      localStorage.setItem("user", JSON.stringify(user));
-      window.location.href = "posts.html";
-    } else {
-      errorElem.textContent = "Usuário ou senha inválidos.";
-      errorElem.classList.remove("hidden");
+    if (!res.ok) {
+      document.getElementById("error").textContent = "Credenciais inválidas.";
+      return;
     }
-  } catch (err) {
-    console.error(err);
-    alert("Erro ao tentar fazer login");
+
+    localStorage.setItem("authToken", data.token);
+    window.location.href = "posts.html";
+  } catch (error) {
+    document.getElementById("error").textContent = "Erro na requisição.";
   }
 });
